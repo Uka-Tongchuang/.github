@@ -1,0 +1,65 @@
+name: Bug 反馈
+description: 提交Bug反馈 
+title: "[Bug]: "
+labels: ["bug", "待审核"]
+status: "待确认"
+type: "Bug修复"
+body:
+  - type: textarea
+    id: bug-description
+    attributes:
+      label: Bug描述及正确情景
+      description: 请详细描述遇到的 Bug，以及你本来预期的结果。
+      placeholder: 请描述出现的bug
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 正确情景
+      description: 期望的正确情况应该是什么样？
+      placeholder: 这里描述你期望的正常情况……
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: device
+    attributes:
+      label: 出现情况 - 设备
+      description: 请选择你遇到 Bug 的设备类型。
+      options:
+        - label: 大型电脑屏幕（宽度 > 1920px）
+        - label: 电脑端
+        - label: 平板端
+        - label: 手机端
+
+  - type: checkboxes
+    id: operating-system
+    attributes:
+      label: 出现情况 - 操作系统
+      description: 请选择你遇到 Bug 的操作系统。
+      options:
+        - label: Windows
+        - label: MacOS
+        - label: iOS
+        - label: Android
+        - label: 其他（请填写）：
+
+  - type: checkboxes
+    id: browser
+    attributes:
+      label: 出现情况 - 浏览器
+      description: 请选择你遇到 Bug 的浏览器。
+      options:
+        - label: Safari
+        - label: Google Chrome
+        - label: Edge
+        - label: Firefox
+        - label: 其他（请填写）：
+
+  - type: textarea
+    id: screenshots-videos
+    attributes:
+      label: 截图/视频（非必需）
+      description: 如果可能，请上传相关截图或视频，以帮助我们更直观地了解问题。

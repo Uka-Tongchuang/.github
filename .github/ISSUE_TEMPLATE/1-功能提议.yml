@@ -1,0 +1,64 @@
+name: 功能提案
+description: 提出一个新的产品功能建议。
+title: "[Feature]: "
+labels: ["enhancement", "待评估"]
+assignees:
+  - octocat
+type: feature_request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的功能建议！请尽可能详细地描述你的想法，以帮助我们更好地理解和评估它。
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 功能描述
+      description: 请简单描述你想要的功能是什么，以及它的主要用途。
+      placeholder: 这里描述你的功能提案……
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem-statement
+    attributes:
+      label: 解决的问题
+      description: 这个功能希望解决什么问题？可以具体描述你的使用场景。
+      placeholder: 这个功能将如何改善用户体验？……
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: 预期效果
+      description: 你期望这个功能如何工作？请尽量详细描述。
+      placeholder: 例如：“当用户点击某个按钮时，系统应该……”
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: target-users
+    attributes:
+      label: 目标用户
+      description: 这个功能主要面向哪些用户群体？
+      options:
+        - label: 普通用户
+        - label: 开发者
+        - label: 管理员
+        - label: 其他（请填写）：
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 其他可能的方案
+      description: 是否有其他方法可以达到相同的目标？请简要描述。
+      placeholder: 例如：“我们可以通过调整现有功能来实现类似效果……”
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 其他信息
+      description: 你还有什么补充说明吗？可以附加相关文档、截图或参考链接。
+      placeholder: 这里可以填写任何额外信息……
