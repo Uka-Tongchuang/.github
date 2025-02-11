@@ -1,11 +1,20 @@
 blank_issues_enabled: false
-# 🚀 Issue Template Settings
+
 issue_templates:
   - name: "Bug反馈"
     description: "提交Bug反馈，反馈产品中的错误或问题"
-    labels: ["bug", "待审核"]
-    file: "ISSUE_TEMPLATE/1-bug反馈.yml"
-  - name: "功能提议"
+    labels: ["bug", "未确认"]
+    file: "ISSUE_TEMPLATE/1-bug.yml"
+  - name: "新功能提议"
     description: "提出新的产品功能建议"
-    labels: ["新功能", "待审核"]
-    file: "ISSUE_TEMPLATE/2-功能提议.yml"
+    labels: ["新功能", "未确认"]
+    file: "ISSUE_TEMPLATE/2-feature.yml"
+
+default_labels:
+  - "未确认"
+
+auto_assign_reviewers:
+  enable: true
+  reviewers:
+    - "octocat"
+    - "dev-team-lead"
