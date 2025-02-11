@@ -3,7 +3,7 @@ description: 提交Bug反馈，反馈产品中的错误或问题
 title: "[Bug]: "
 labels: ["bug", "待审核"]
 status: "待确认"
-type: "Bug修复"
+type: bug_report
 body:
   - type: textarea
     id: bug-description
