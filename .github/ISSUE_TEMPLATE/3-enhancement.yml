@@ -1,7 +1,7 @@
 name: 功能优化提议
 description: 提出对现有功能的优化或改进建议
 title: "[优化] - "
-labels: ["功能优化", "未确认"]
+labels: ["功能优化"]
 type: feature_request
 body:
     - type: markdown

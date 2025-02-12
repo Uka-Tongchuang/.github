@@ -1,4 +1,19 @@
 blank_issues_enabled: false
+
+issue_templates:
+  - name: "Bug反馈"
+    description: "提交Bug反馈，反馈产品中的错误或问题"
+    labels: ["bug"]
+    file: "ISSUE_TEMPLATE/1-bug.yml"
+  - name: "新功能提议"
+    description: "提出新的产品功能建议"
+    labels: ["新功能"]
+    file: "ISSUE_TEMPLATE/2-feature.yml"
+  - name: "功能优化提议"
+    description: "提出对现有功能的优化或改进建议"
+    labels: ["功能优化"]
+    file: "ISSUE_TEMPLATE/3-enhancement.yml"
+
 auto_assign_reviewers:
   enable: true
   reviewers:

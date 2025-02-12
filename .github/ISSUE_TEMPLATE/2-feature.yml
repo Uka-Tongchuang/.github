@@ -1,7 +1,7 @@
 name: 新功能提议
 description: 提出一个新的产品功能建议
 title: "[新功能] - "
-labels: ["新功能", "未确认"]
+labels: ["新功能"]
 type: feature_request
 body:
   - type: markdown
@@ -16,7 +16,7 @@ body:
       description: 请简单描述想要的功能是什么，以及它的主要用途场景。
       placeholder: 这里描述你的功能提议
       value: ""
-    validations:
+    validation
       required: true
 
   - type: textarea
