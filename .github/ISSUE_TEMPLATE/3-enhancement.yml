@@ -1,0 +1,62 @@
+name: 功能优化提议
+description: 提出对现有功能的优化或改进建议
+title: "[优化] - "
+labels: ["功能优化", "未确认"]
+type: feature_request
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的优化建议！请尽可能详细地描述你的想法，以便我们更好地理解和评估它。
+
+  - type: textarea
+    id: enhancement-description
+    attributes:
+      label: 优化描述
+      description: 请简要描述你希望改进的功能，以及改进的主要目的。
+      placeholder: 这里描述你的优化建议
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-issues
+    attributes:
+      label: 当前存在的问题
+      description: 你希望改进的功能存在哪些不足或问题？
+      placeholder: 例如：“目前的功能存在……”
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: 你的优化方案
+      description: 你建议如何改进该功能？请尽量详细描述你的方案。
+      placeholder: 例如：“可以通过……来提升用户体验。”
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: affected-users
+    attributes:
+      label: 受影响的用户群体
+      description: 这个优化对哪些用户群体有影响？
+      options:
+        - label: 个体用户
+        - label: 企业用户
+        - label: 开发者
+        - label: 其他（请填写）：
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 其他可行方案
+      description: 是否有其他方法可以实现类似的改进？请简要描述。
+      placeholder: 例如：“我们可以通过调整 UI 交互来提升用户体验……”
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 补充说明
+      description: 你还有什么补充说明吗？可以附加相关文档、截图或参考链接。
+      placeholder: 这里可以填写任何额外信息……
