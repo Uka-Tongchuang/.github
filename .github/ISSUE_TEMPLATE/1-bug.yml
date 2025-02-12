@@ -15,6 +15,7 @@ body:
       label: Bug描述及正确情景
       description: 请详细描述遇到的Bug
       placeholder: 请描述出现的bug
+      value: ""
     validations:
       required: true
 
@@ -24,6 +25,7 @@ body:
       label: 正确情景
       description: 期望的正确情况应该是什么样？
       placeholder: 这里描述你预期的正常情况
+      value: ""
     validations:
       required: true
 
@@ -43,34 +45,50 @@ body:
     id: operating-system
     attributes:
       label: 出现情况 - 操作系统
-      description: 请选择你遇到该问题时使用的操作系统。
+      description: 请选择你遇到该问题时使用的操作系统，如果没有适用选项，请选择“其他”并填写下方输入框。
       options:
         - label: Windows
         - label: MacOS
         - label: iOS
         - label: Android
-        - label: 其他（请填写）：
+        - label: 其他
+  
+  - type: input
+    id: os-others
+    attributes:
+      label: 其他操作系统
+      description: 如果上方选项不适用，请在此处填写具体操作系统。
+      placeholder: 请输入其他适用操作系统
 
   - type: checkboxes
     id: browser
     attributes:
       label: 出现情况 - 浏览器
-      description: 请选择你遇到该问题时使用的浏览器。
+      description: 请选择你遇到该问题时使用的浏览器，如果没有适用选项，请选择“其他”并填写下方输入框。
       options:
         - label: Safari
         - label: Google Chrome
         - label: Edge
         - label: Firefox
-        - label: 其他（请填写）：
+        - label: 其他
+
+  - type: input
+    id: browser-others
+    attributes:
+      label: 其他浏览器
+      description: 如果上方选项不适用，请在此处填写具体浏览器。
+      placeholder: 请输入其他适用浏览器
 
   - type: textarea
     id: screenshots-videos
     attributes:
       label: 截图/视频（非必需）
       description: 如果可能，请上传相关截图或视频，以帮助我们更直观地了解问题。
+      value: ""
 
   - type: textarea
     id: additional-notes
     attributes:
       label: 备注
       placeholder: 如果有其他补充说明，请填写
+      value: ""
