@@ -36,18 +36,18 @@ body:
         validations:
             required: true
 
-        - type: checkboxes
+    - type: checkboxes
         id: target-users
         attributes:
             label: 受影响的用户群体
             description: 这个优化对哪些用户群体有影响？如果没有适用选项，请选择“其他”并填写下方输入框。
-        options:
-            - label: 个体用户
-            - label: 企业用户
-            - label: 开发者
-            - label: 其他
+            options:
+                - label: 个体用户
+                - label: 企业用户
+                - label: 开发者
+                - label: 其他
 
-        - type: input
+    - type: input
         id: target-users-other
         attributes:
             label: 其他用户群体

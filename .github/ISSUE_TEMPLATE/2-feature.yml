@@ -37,12 +37,12 @@ body:
         - label: 企业用户
         - label: 其他
 
-    - type: input
-      id: target-users-other
-      attributes:
-        label: 其他用户群体
-        description: 如果上方选项不适用，请在此处填写具体用户群体。
-        placeholder: 请输入其他适用用户群体
+  - type: input
+    id: target-users-other
+    attributes:
+      label: 其他用户群体
+      description: 如果上方选项不适用，请在此处填写具体用户群体。
+      placeholder: 请输入其他适用用户群体
 
   - type: textarea
     id: alternatives
