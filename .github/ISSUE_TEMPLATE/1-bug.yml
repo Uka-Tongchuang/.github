@@ -15,7 +15,6 @@ body:
       label: Bug描述及正确情景
       description: 请详细描述遇到的Bug
       placeholder: 请描述出现的bug
-      value: ""
     validations:
       required: true
 
@@ -25,7 +24,6 @@ body:
       label: 正确情景
       description: 期望的正确情况应该是什么样？
       placeholder: 这里描述你预期的正常情况
-      value: ""
     validations:
       required: true
 
@@ -84,11 +82,9 @@ body:
     attributes:
       label: 截图/视频（非必需）
       description: 如果可能，请上传相关截图或视频，以帮助我们更直观地了解问题。
-      value: ""
 
   - type: textarea
     id: additional-notes
     attributes:
       label: 备注
       placeholder: 如果有其他补充说明，请填写
-      value: ""

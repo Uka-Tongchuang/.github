@@ -15,7 +15,6 @@ body:
             label: 优化描述
             description: 请简要描述你希望改进的功能，以及改进的主要目的。
             placeholder: 这里描述你的优化建议
-            value: ""
         validations:
             required: true
 
@@ -25,7 +24,6 @@ body:
             label: 当前存在的问题
             description: 你希望改进的功能存在哪些不足或问题？
             placeholder: 例如：“目前的功能存在……”
-            value: ""
         validations:
             required: true
 
@@ -35,7 +33,6 @@ body:
             label: 你的优化方案
             description: 你建议如何改进该功能？请尽量详细描述你的方案。
             placeholder: 例如：“可以通过……来提升用户体验。”
-            value: ""
         validations:
             required: true
 
@@ -56,7 +53,6 @@ body:
             label: 其他用户群体
             description: 如果上方选项不适用，请在此处填写具体用户群体。
             placeholder: 请输入其他适用用户群体
-            value: ""
 
     - type: textarea
         id: alternatives
@@ -64,7 +60,6 @@ body:
             label: 其他可行方案
             description: 是否有其他方法可以实现类似的改进？请简要描述。
             placeholder: 例如：“我们可以通过调整 UI 交互来提升用户体验……”
-            value: ""
     
     - type: textarea
         id: additional-context
@@ -72,4 +67,3 @@ body:
             label: 补充说明
             description: 你还有什么补充说明吗？可以附加相关文档、截图或参考链接。
             placeholder: 这里可以填写任何额外信息……
-            value: ""
