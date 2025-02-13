@@ -1,5 +1,5 @@
-name: 其他
-description: 如果以上模版不符合需求，请选择【其他】
+name: 其他情况
+description: 如果以上模版不符合需求，请选择【其他情况】
 title: "[其他] - "
 labels: []
 type: other_request
