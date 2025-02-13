@@ -10,20 +10,11 @@ body:
                 感谢你的优化建议！请尽可能详细地描述你的想法，以便我们更好地理解和评估它。
 
     -   type: textarea
-        id: enhancement-description
-        attributes:
-            label: 优化描述
-            description: 请简要描述你希望改进的功能，以及改进的主要目的。
-            placeholder: 这里描述你的优化建议
-        validations:
-            required: true
-
-    -   type: textarea
         id: current-issues
         attributes:
             label: 当前存在的问题
-            description: 你希望改进的功能存在哪些不足或问题？
-            placeholder: 例如：“目前的功能存在……”
+            description: 你希望改进什么功能？存在哪些不足或问题？
+            placeholder: 例如：“目前的……功能存在……问题”
         validations:
             required: true
 

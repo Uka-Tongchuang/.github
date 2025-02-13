@@ -13,6 +13,10 @@ issue_templates:
     description: "提出对现有功能的优化或改进建议"
     labels: ["功能优化"]
     file: "ISSUE_TEMPLATE/3-enhancement.yml"
+  - name: "其他"
+    description: "如果以上模版不符合需求，请选择【其他】"
+    labels: []
+    file: "ISSUE_TEMPLATE/4-others.yml"
 
 auto_assign_reviewers:
   enable: true
