@@ -1,0 +1,26 @@
+name: 新设计提议
+description: 新设计或美化提议
+title: "[设计][页面名] - "
+labels: []
+type: design_change
+body:
+  - type: markdown
+    attributes:
+      value: |
+        感谢你的建议！请尽可能详细地描述你的想法，以便我们更好地理解和评估它。
+
+  - type: textarea
+    id: feature-description
+    attributes:
+      label: 设计效果
+      description: 请描述你的设计想法
+      placeholder: 这里描述设计想法
+    validations:
+      required: true
+  
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 补充说明
+      description: 你还有什么补充说明吗？可以附加相关文档、截图或参考链接。
+      placeholder: 这里可以填写任何额外信息
