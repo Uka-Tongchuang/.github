@@ -1,6 +1,6 @@
 name: 新功能提议
 description: 提出一个新的产品功能建议
-title: "[新功能] - "
+title: "[新功能][页面名][前端｜后端] - "
 labels: ["新功能"]
 type: feature_request
 body:
@@ -15,15 +15,6 @@ body:
       label: 功能描述
       description: 请简单描述想要的功能是什么，以及它的主要用途场景。
       placeholder: 这里描述你的功能提议
-    validations:
-      required: true
-
-  - type: textarea
-    id: expected-behavior
-    attributes:
-      label: 预期效果
-      description: 你期望这个功能如何工作？请尽量详细描述。
-      placeholder: 例如：“当用户点击某个按钮时，系统应该……”
     validations:
       required: true
 

@@ -1,6 +1,6 @@
 name: 功能优化提议
 description: 提出对现有功能的优化或改进建议
-title: "[优化] - "
+title: "[优化][页面名][前端｜后端] - "
 labels: ["功能优化"]
 type: feature_request
 body:
@@ -12,18 +12,9 @@ body:
     -   type: textarea
         id: current-issues
         attributes:
-            label: 当前存在的问题
-            description: 你希望改进什么功能？存在哪些不足或问题？
-            placeholder: 例如：“目前的……功能存在……问题”
-        validations:
-            required: true
-
-    -   type: textarea
-        id: proposed-solution
-        attributes:
-            label: 你的优化方案
-            description: 你建议如何改进该功能？请尽量详细描述你的方案。
-            placeholder: 例如：“可以通过……来提升用户体验。”
+            label: 当前存在的问题及优化方案
+            description: 你希望改进什么功能？存在哪些不足或问题？你建议如何改进该功能？
+            placeholder: 例如：“目前的……功能存在……问题，可以通过……来提升用户体验。”
         validations:
             required: true
 
